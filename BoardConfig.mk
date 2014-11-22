@@ -262,6 +262,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)
 # Ril
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# SELinux
+include device/qcom/sepolicy/sepolicy.mk
+
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
