@@ -475,6 +475,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Tri-state-key
+PRODUCT_PACKAGES += \
+    tri-state-key_daemon
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
