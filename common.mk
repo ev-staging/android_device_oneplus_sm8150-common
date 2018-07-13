@@ -208,6 +208,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES  += \
     ro.opengles.version=196610
 
+# Doze
+PRODUCT_PACKAGES += \
+    OnePlusDoze
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
