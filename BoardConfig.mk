@@ -45,12 +45,18 @@ TARGET_BOARD_PLATFORM := msmnile
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
 
 # Kernel
-BOARD_PREBUILT_DTBOIMAGE := device/qcom/msmnile-kernel/dtbo.img
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_BASE        := 0x00000000
+BOARD_KERNEL_IMAGE_NAME  := Image-dtb
 BOARD_KERNEL_PAGESIZE    := 4096
+BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+TARGET_KERNEL_SOURCE := kernel/qcom/sm8150
+TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
 
 # Bootimage
 BOARD_BOOTIMG_HEADER_VERSION := 1
@@ -202,11 +208,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(PLATFORM_PATH)/vendor_framework_
 # Media
 BOARD_SECCOMP_POLICY := $(PLATFORM_PATH)/seccomp
 TARGET_USES_MEDIA_EXTENSIONS := true
-
-# Modules
-KERNEL_MODULES_INSTALL := dlkm
-KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_NAME)/$(KERNEL_MODULES_INSTALL)/lib/modules
-BOARD_VENDOR_KERNEL_MODULES += $(shell ls device/qcom/msmnile-kernel/modules/*.ko)
 
 # Nfc
 TARGET_USES_NQ_NFC := true
