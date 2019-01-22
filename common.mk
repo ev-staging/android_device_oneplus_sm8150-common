@@ -486,6 +486,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.oneplus_msmnile
+
 # Tri-state-key
 PRODUCT_PACKAGES += \
     tri-state-key_daemon
