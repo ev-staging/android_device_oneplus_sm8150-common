@@ -281,6 +281,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
+# KeyHandler
+PRODUCT_PACKAGES += \
+    KeyHandler
+
 # Keymaster
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
