@@ -226,6 +226,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qfp=true
 
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.oneplus_msmnile
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.1-impl-qti \
