@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-PRODUCT_NAME := msmnile
+PRODUCT_NAME := aosp_msmnile
 PRODUCT_DEVICE := msmnile
 PRODUCT_BRAND := qti
 PRODUCT_MODEL := AOSP on msmnile

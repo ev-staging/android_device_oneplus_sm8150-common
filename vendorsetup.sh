@@ -27,4 +27,4 @@
 #  IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-add_lunch_combo msmnile-userdebug
+add_lunch_combo aosp_msmnile-userdebug
