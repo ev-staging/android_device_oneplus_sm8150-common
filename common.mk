@@ -532,3 +532,5 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+$(call inherit-product-if-exists, vendor/oneplus/sm8150-common/device-vendor.mk)

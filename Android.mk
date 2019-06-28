@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),msmnile)
+ifneq ($(filter guacamole guacamoleb guacamolec,$(TARGET_DEVICE)),)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
