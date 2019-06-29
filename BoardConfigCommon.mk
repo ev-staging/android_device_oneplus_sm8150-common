@@ -15,6 +15,7 @@
 #
 
 PLATFORM_PATH := device/oneplus/sm8150-common
+PRODUCT_SOONG_NAMESPACES += $(PLATFORM_PATH)
 
 # Architecture
 TARGET_ARCH := arm64
