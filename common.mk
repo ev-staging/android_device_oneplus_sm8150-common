@@ -532,6 +532,7 @@ PRODUCT_PACKAGES += \
     wifilearner \
     wpa_supplicant \
     wpa_supplicant.conf \
+    wifi-mac-generator \
     vendor.qti.hardware.wifi.hostapd@1.0.vendor \
     vendor.qti.hardware.wifi.supplicant@2.0.vendor
 
