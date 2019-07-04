@@ -219,7 +219,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_MOUNT_POINTS_SYMLINKS := false
 TARGET_USES_MKE2FS := true
 
-BOARD_ROOT_EXTRA_FOLDERS := odm
+BOARD_ROOT_EXTRA_FOLDERS := odm op1 op2
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/lib/dsp:/dsp \
     /mnt/vendor/persist:/persist \
@@ -250,6 +250,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
