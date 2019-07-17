@@ -210,14 +210,28 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.graphics.composer@2.2-impl \
     android.hardware.graphics.composer@2.2-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
+    android.hardware.configstore@1.0-service \
+    gralloc.msmnile \
+    hwcomposer.msmnile \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml \
+    memtrack.msmnile \
+    libdisplayconfig \
+    liboverlay \
+    libqdMetaData.system \
+    libtinyxml \
     libvulkan \
-    vendor.display.config@1.7
+    vendor.display.color@1.0-service \
+    vendor.display.color@1.0-impl \
+    vendor.display.config@1.0
 
 # Doze
 PRODUCT_PACKAGES += \
