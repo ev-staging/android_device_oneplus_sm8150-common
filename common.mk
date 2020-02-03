@@ -443,6 +443,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2019-10-01
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
