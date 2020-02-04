@@ -122,6 +122,7 @@ void vendor_load_properties() {
         case 18827:
             /* 5G */
             load_props("1920", 2);
+            break;
         case 18831:
         case 19861:
             /* T-Mobile */
